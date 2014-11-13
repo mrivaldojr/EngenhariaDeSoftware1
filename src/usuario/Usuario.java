@@ -1,9 +1,16 @@
 package usuario;
 
-public class Usuario {
+import emprestimo.Emprestavel;
+
+public class Usuario implements Emprestavel {
 	
 	private int codIdentificacao;
 	private String nome;
+	public Emprestavel emprestavel;
+	
+	public void fazerEmprestimo(){
+		emprestavel.emprestar();
+	}
 	
 	public int getCodIdentificacao() {
 		return codIdentificacao;
@@ -16,6 +23,12 @@ public class Usuario {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	
+	@Override
+	public void emprestar() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
