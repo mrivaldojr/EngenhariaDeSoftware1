@@ -1,17 +1,11 @@
 package usuario;
 
-import emprestimo.Emprestavel;
+import emprestimo.EmprestimoProfessor;
+
 
 public class Professor extends Usuario{
-	
 	public Professor() {
-		emprestavel = new Emprestavel() {
-			@Override
-			public void emprestar() {
-				// TODO Auto-generated method stub
-				
-			}
-		};
+		emprestavel = new EmprestimoProfessor();
 	}
 	
 }

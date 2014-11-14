@@ -2,14 +2,18 @@ package usuario;
 
 import emprestimo.Emprestavel;
 
-public class Usuario implements Emprestavel {
+public class Usuario{
 	
 	private int codIdentificacao;
 	private String nome;
-	public Emprestavel emprestavel;
-	
+	protected Emprestavel emprestavel;
+
 	public void fazerEmprestimo(){
-		emprestavel.emprestar();
+		emprestavel.pegarEmprestado();
+	}
+	
+	public void setMetodoEmprestimo(Emprestavel emprestavel){
+		this.emprestavel = emprestavel;
 	}
 	
 	public int getCodIdentificacao() {
@@ -25,10 +29,5 @@ public class Usuario implements Emprestavel {
 		this.nome = nome;
 	}
 	
-	@Override
-	public void emprestar() {
-		// TODO Auto-generated method stub
-		
-	}
 	
 }
