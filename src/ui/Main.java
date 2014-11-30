@@ -20,7 +20,7 @@ public class Main {
 		
 		Controle controle = new Controle();
 		
-
+		
 	}
 
 }
