@@ -20,7 +20,24 @@ public class SistemaBiblioteca {
 		return sistemaBiblioteca;
 	}
 	
-	public void consultarMaterial(){
-		
+	//métodos da fachada que vão se comunicar com as classes de modelo
+	public void consultarMaterial(String codMaterial){
+		System.out.println("Teste Consultar Material codMat: "+codMaterial);
+	}
+	
+	public void consultarUser(String codUsr){
+		System.out.println("Teste Consiltar Usuário codUsr: "+codUsr);
+	}
+	
+	public void devolverMaterial(String codUsr, String codMaterial){
+		System.out.println("Devolução de Material codUsr: "+codUsr+" codMat: "+codMaterial);
+	}
+	
+	public void pegarEmprestado(String codUsr, String codMaterial){
+		System.out.println("Empréstimo de MaterialcodUsr: "+codUsr+" codMat: "+codMaterial);
+	}
+	
+	public void reservarMaterial(String codUsr, String codMaterial){
+		System.out.println("Reserva de Material codUsr: "+codUsr+" codMat: "+codMaterial);
 	}
 }

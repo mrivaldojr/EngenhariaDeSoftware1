@@ -11,8 +11,9 @@ public class ConsultaMaterialCommand implements Command{
 	}
 	
 	@Override
-	public void execute() {
-		sistema.consultarMaterial();	
+	public void execute(String params) {
+		
+		sistema.consultarMaterial(params);	
 	}
 
 }

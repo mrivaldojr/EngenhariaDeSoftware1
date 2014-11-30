@@ -1,5 +1,7 @@
 package ui;
 
+import java.util.Scanner;
+
 import command.ConsultaMaterialCommand;
 import command.ConsultaUsuarioCommand;
 import command.Controle;
@@ -11,6 +13,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		String opcao ="";
+		String parametros;
+		
+		Controle controle = new Controle();
+		
 		//intancia comandos
 		ConsultaMaterialCommand consultaMaterialCommand = new ConsultaMaterialCommand();
 		ConsultaUsuarioCommand consultaUsuarioCommand = new ConsultaUsuarioCommand();
@@ -18,8 +25,21 @@ public class Main {
 		EmprestimoCommand emprestimoCommand = new EmprestimoCommand();
 		ReservaCommand reservaCommand = new ReservaCommand();
 		
-		Controle controle = new Controle();
+		controle.setComandos("dev", devolucaoCommand);
+		controle.setComandos("mat", consultaMaterialCommand);
+		controle.setComandos("emp", emprestimoCommand);
+		controle.setComandos("usu", consultaUsuarioCommand);
+		controle.setComandos("res", reservaCommand);
 		
+		Scanner scanner = new Scanner(System.in);
+		
+		while(!(opcao.equals("fim"))){
+			opcao = scanner.next();
+			parametros = scanner.nextLine();
+			parametros = parametros.trim();
+			controle.executaComando(opcao, parametros);	
+		}
+				
 		
 	}
 
