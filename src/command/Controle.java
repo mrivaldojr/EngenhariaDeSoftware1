@@ -6,7 +6,6 @@ public class Controle {
 	
 	private HashMap<String, Command> comandos = new HashMap<String, Command>();
 	
-	
 	public void setComandos(String tipo, Command comando){
 		comandos.put(tipo, comando);
 	}

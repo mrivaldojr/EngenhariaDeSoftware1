@@ -3,14 +3,14 @@ package material;
 
 public class Material {
 	
-	private int codigo;
-	private String titulo;
-	private int anoPublicacao;
+	protected String codigo;
+	protected String titulo;
+	protected int anoPublicacao;
 	
-	public int getCodigo() {
+	public String getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(int codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 	public String getTitulo() {

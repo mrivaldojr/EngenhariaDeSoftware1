@@ -1,7 +1,11 @@
 package emprestimo;
 
+import material.Material;
+
 public class EmprestimoGraducao implements Emprestavel{
 
+	private Material material;
+	
 	@Override
 	public void pegarEmprestado() {
 		//implementação do empréstimo para graducação

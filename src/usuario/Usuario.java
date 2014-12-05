@@ -4,8 +4,8 @@ import emprestimo.Emprestavel;
 
 public class Usuario{
 	
-	private int codIdentificacao;
-	private String nome;
+	protected String codIdentificacao;
+	protected String nome;
 	protected Emprestavel emprestavel;
 
 	public void fazerEmprestimo(){
@@ -16,10 +16,10 @@ public class Usuario{
 		this.emprestavel = emprestavel;
 	}
 	
-	public int getCodIdentificacao() {
+	public String getCodIdentificacao() {
 		return codIdentificacao;
 	}
-	public void setCodIdentificacao(int codIdentificacao) {
+	public void setCodIdentificacao(String codIdentificacao) {
 		this.codIdentificacao = codIdentificacao;
 	}
 	public String getNome() {

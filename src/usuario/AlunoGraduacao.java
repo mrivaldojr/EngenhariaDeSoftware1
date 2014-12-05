@@ -4,8 +4,12 @@ import emprestimo.EmprestimoGraducao;
 
 public class AlunoGraduacao extends Usuario{
 	
-	public AlunoGraduacao() {
+	public AlunoGraduacao(String cod, String nome){
+		this.nome = nome;
+		this.codIdentificacao = cod;
+		
 		emprestavel = new EmprestimoGraducao();
 	}
 
+	
 }

@@ -8,10 +8,12 @@ import command.Controle;
 import command.DevolucaoCommand;
 import command.EmprestimoCommand;
 import command.ReservaCommand;
+import facade.SistemaBiblioteca;
 
 public class Main {
 
 	public static void main(String[] args) {
+		//só para teste
 		
 		String opcao ="";
 		String parametros;
@@ -25,6 +27,7 @@ public class Main {
 		EmprestimoCommand emprestimoCommand = new EmprestimoCommand();
 		ReservaCommand reservaCommand = new ReservaCommand();
 		
+		//inicializa os hashmaps para ligar cada string a um comando
 		controle.setComandos("dev", devolucaoCommand);
 		controle.setComandos("mat", consultaMaterialCommand);
 		controle.setComandos("emp", emprestimoCommand);
@@ -40,7 +43,6 @@ public class Main {
 			controle.executaComando(opcao, parametros);	
 		}
 				
-		
 	}
 
 }

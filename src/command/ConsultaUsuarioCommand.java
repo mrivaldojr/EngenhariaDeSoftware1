@@ -12,6 +12,7 @@ public class ConsultaUsuarioCommand implements Command{
 	
 	@Override
 	public void execute(String params) {
+		//só precisa de um parâmtro, não precisa tratamento
 		sistema.consultarUser(params);
 	}
 
