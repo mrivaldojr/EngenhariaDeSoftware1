@@ -4,7 +4,7 @@ import facade.SistemaBiblioteca;
 
 public class ConsultaMaterialCommand implements Command{
 
-	SistemaBiblioteca sistema;
+	private SistemaBiblioteca sistema;
 	
 	public ConsultaMaterialCommand() {
 		this.sistema = SistemaBiblioteca.getInstance();

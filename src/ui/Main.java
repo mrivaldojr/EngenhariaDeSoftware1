@@ -7,6 +7,7 @@ import command.ConsultaUsuarioCommand;
 import command.Controle;
 import command.DevolucaoCommand;
 import command.EmprestimoCommand;
+import command.NullCommand;
 import command.ReservaCommand;
 import facade.SistemaBiblioteca;
 
@@ -34,7 +35,9 @@ public class Main {
 		controle.setComandos("usu", consultaUsuarioCommand);
 		controle.setComandos("res", reservaCommand);
 		
+		
 		Scanner scanner = new Scanner(System.in);
+		//opcao = scanner.next();
 		
 		while(!(opcao.equals("fim"))){
 			opcao = scanner.next();
