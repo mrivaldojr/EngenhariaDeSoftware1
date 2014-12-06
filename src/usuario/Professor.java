@@ -1,6 +1,6 @@
 package usuario;
 
-import emprestimo.EmprestimoProfessor;
+import emprestimoStrategy.EmprestimoProfessor;
 
 
 public class Professor extends Usuario{

@@ -5,13 +5,14 @@ public class CD extends Material{
 	private String[] faixas;
 	
 	public CD(String cod, String titulo, 
-			String[] autores, String[] faixas, int ano) {
+			String[] autores, String[] faixas, int ano, Exemplar[] exemplares) {
 		
 		this.anoPublicacao = ano;
 		this.autores = autores;
 		this.codigo = cod;
 		this.faixas = faixas;
 		this.titulo = titulo;
+		this.exemplares = exemplares;
 		
 	}
 	

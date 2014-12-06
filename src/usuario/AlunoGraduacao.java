@@ -1,6 +1,6 @@
 package usuario;
 
-import emprestimo.EmprestimoGraducao;
+import emprestimoStrategy.EmprestimoGraducao;
 
 public class AlunoGraduacao extends Usuario{
 	
@@ -10,6 +10,7 @@ public class AlunoGraduacao extends Usuario{
 		
 		emprestavel = new EmprestimoGraducao();
 	}
-
+	
+	
 	
 }

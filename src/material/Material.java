@@ -1,12 +1,21 @@
 package material;
 
 
+
 public class Material {
 	
 	protected String codigo;
 	protected String titulo;
 	protected int anoPublicacao;
+
+	protected Exemplar[] exemplares;
 	
+	public Exemplar[] getExemplares() {
+		return exemplares;
+	}
+	public void setExemplares(Exemplar[] exemplares) {
+		this.exemplares = exemplares;
+	}
 	public String getCodigo() {
 		return codigo;
 	}
@@ -25,5 +34,8 @@ public class Material {
 	public void setAnoPublicacao(int anoPublicacao) {
 		this.anoPublicacao = anoPublicacao;
 	}
+	
+	
+	
 	
 }

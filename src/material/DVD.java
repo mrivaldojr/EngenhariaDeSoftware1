@@ -5,13 +5,14 @@ public class DVD extends Material{
 	private int regiao;
 	
 	public DVD(String cod, String titulo, 
-			String[] autores, int ano, int regiao) {
+			String[] autores, int ano, int regiao, Exemplar[] exemplares) {
 		
 		this.anoPublicacao = ano;
 		this.autores = autores;
 		this.codigo = cod;
 		this.titulo = titulo;
 		this.regiao = regiao;
+		this.exemplares = exemplares;
 		
 	}
 	

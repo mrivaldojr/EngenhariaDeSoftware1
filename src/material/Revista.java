@@ -4,12 +4,15 @@ public class Revista extends Material{
 	private int edicao;
 	private String mes;
 	
-	public Revista(String cod, String titulo, int edicao, String mes, int ano) {
+	public Revista(String cod, String titulo, int edicao, String mes, 
+			int ano, Exemplar[] exemplares) {
+		
 		this.anoPublicacao = ano;
 		this.codigo = cod;
 		this.edicao = edicao;
 		this.mes = mes;
 		this.titulo = titulo;
+		this.exemplares = exemplares;
 	}
 	
 	public int getEdicao() {

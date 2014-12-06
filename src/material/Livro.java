@@ -6,7 +6,7 @@ public class Livro extends Material{
 	private String editora;
 	
 	public Livro(String cod, String titulo, int ano, 
-			String[] autores, int edicao, String editora) {
+			String[] autores, int edicao, String editora, Exemplar[] exemplares) {
 		
 		this.anoPublicacao = ano;
 		this.autores = autores;
@@ -14,6 +14,7 @@ public class Livro extends Material{
 		this.edicao = edicao;
 		this.editora = editora;
 		this.titulo = titulo;
+		this.exemplares = exemplares;
 		
 	}
 	

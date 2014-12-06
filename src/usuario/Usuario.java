@@ -1,15 +1,18 @@
 package usuario;
 
-import emprestimo.Emprestavel;
+import reserva.Reserva;
+import material.Material;
+import emprestimoStrategy.Emprestavel;
 
 public class Usuario{
 	
 	protected String codIdentificacao;
 	protected String nome;
 	protected Emprestavel emprestavel;
+	protected Reserva[] reservas;
 
-	public void fazerEmprestimo(){
-		emprestavel.pegarEmprestado();
+	public void fazerEmprestimo(String codUsr, Material material){
+		emprestavel.pegarEmprestado(codUsr, material);	
 	}
 	
 	public void setMetodoEmprestimo(Emprestavel emprestavel){
@@ -28,6 +31,8 @@ public class Usuario{
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	
 	
 	
 }
