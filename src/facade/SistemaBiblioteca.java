@@ -56,8 +56,15 @@ public class SistemaBiblioteca {
 	}
 
 	public void devolverMaterial(String codUsr, String codMaterial) {
-		System.out.println("Devolução de Material codUsr: " + codUsr
-				+ " codMat: " + codMaterial);
+		usuario = buscaUsr(codUsr);
+		material = buscaMat(codMaterial);
+		
+		if(usuario==null||material==null){
+			System.out.println("Material ou usuario nao encontrados");
+			return;
+		}
+		
+		usuario.devolverMaterial(usuario, material);
 	}
 
 	public void pegarEmprestado(String codUsr, String codMaterial) {

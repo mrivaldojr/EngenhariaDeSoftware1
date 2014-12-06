@@ -87,7 +87,7 @@ public class Usuario{
 	
 	public boolean verificaEmprestimoIgual(String cod){
 		for(int i=0;i<emprestimos.size();i++){
-			if(emprestimos.get(i).getExemplar().getCodMaterial().equals(cod)){
+			if((emprestimos.get(i).getExemplar().getCodMaterial().equals(cod))&& (emprestimos.get(i).getStatus().equals("Ativo")) ){
 				return true;
 			}
 		}
@@ -96,6 +96,18 @@ public class Usuario{
 	
 	public void consultaUsuario(){
 		for(int i=0; i<emprestimos.size(); i++){
+		}
+	}
+	
+	public void devolverMaterial(Usuario usr, Material mat){
+		for(int i=0;i<this.emprestimos.size();i++){
+			if(emprestimos.get(i).getMaterialCod().equals(mat.getCodigo())){
+				emprestimos.get(i).setStatus("Finalizado");
+				emprestimos.get(i).devolveExemplar(emprestimos.get(i).getExemplar());
+				return;
+			}
+			System.out.println("Não existe emprestimo do usuario:"
+			+getNome()+" para o material: "+mat.getTitulo());
 		}
 	}
 	

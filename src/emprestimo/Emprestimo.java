@@ -47,6 +47,10 @@ public class Emprestimo {
 	public void setDias(int dias) {
 		this.dias = dias;
 	}
+	
+	
+	
+	
 	public void setDataDev(int dias){
 		Calendar c = Calendar.getInstance();
 		c.add(Calendar.DAY_OF_MONTH, dias);
@@ -58,5 +62,13 @@ public class Emprestimo {
 	
 	public String getUsrName(){
 		return this.usuario.getNome();
+	}
+	
+	public String getMaterialCod(){
+		return this.exemplar.getCodMaterial();
+	}
+	
+	public void devolveExemplar(Exemplar e){
+		e.setStatus("Disponível");
 	}
 }
