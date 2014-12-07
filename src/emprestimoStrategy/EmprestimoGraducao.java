@@ -16,11 +16,11 @@ public class EmprestimoGraducao implements Emprestavel {
 		// limitar emprestimos abertos a 3 ok
 		// ver disponibilidade do material ok
 		// usuario nao pode estar devedor <--------------------
-		// caso os exemplares não estejam reservados
+		// caso os exemplares não estejam reservados ok
 		// verificar se o usuario ja tem um emprestimo daquele tipo ok
 
 		if (material.getExemplares() == null) {
-			System.out.println("Este material não possui emxemplares");
+			System.out.println("Este material não possui exemplares");
 			return;
 		}
 
@@ -29,6 +29,11 @@ public class EmprestimoGraducao implements Emprestavel {
 			if (usr.contEmprestimos() >= 3) {
 				System.out.println("Usuario: " + usr.getNome()
 						+ " já possui 3 emprestimos");
+				return;
+			}
+			
+			if(usr.verificaDebito()){
+				System.out.println("Você está em débito na biblioteca");
 				return;
 			}
 			

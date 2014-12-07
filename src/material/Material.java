@@ -116,7 +116,6 @@ public class Material {
 			if(exemplares[i].getStatus().equals("Indisponível")){
 				System.out.println("Emprestado para: "+exemplares[i].getUserName());
 			}
-			
 		}
 	}
 	

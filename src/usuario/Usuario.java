@@ -1,6 +1,7 @@
 package usuario;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 import reserva.Reserva;
 import material.Material;
@@ -53,6 +54,8 @@ public class Usuario{
 		
 	}
 	
+	
+	
 	private boolean verificaReservaDuplicada(Material m){
 		
 		for(int i=0; i<reservas.size();i++){
@@ -89,6 +92,19 @@ public class Usuario{
 		for(int i=0;i<emprestimos.size();i++){
 			if((emprestimos.get(i).getExemplar().getCodMaterial().equals(cod))&& (emprestimos.get(i).getStatus().equals("Ativo")) ){
 				return true;
+			}
+		}
+		return false;
+	}
+	
+	//retorna falso se a data de devolução for menor que a data atual e o emprestimo estiver ativo
+	public boolean verificaDebito(){
+		Date dataAtual = new Date(System.currentTimeMillis());
+		
+		for(int i=0; i< emprestimos.size();i++){
+			if( (emprestimos.get(i).getDataDev().compareTo(dataAtual)<0) &&
+					(emprestimos.get(i).getStatus().equals("Ativo")) ){
+				return false;
 			}
 		}
 		return false;
