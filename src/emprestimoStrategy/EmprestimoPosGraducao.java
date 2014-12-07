@@ -18,10 +18,10 @@ public class EmprestimoPosGraducao implements Emprestavel{
 		}
 
 		else {
-			// verifica se o usuário já tem 3 emprestimos
-			if (usr.contEmprestimos() >= 3) {
+			// verifica se o usuário já tem 4 emprestimos
+			if (usr.contEmprestimos() >= 4) {
 				System.out.println("Usuario: " + usr.getNome()
-						+ " já possui 3 emprestimos");
+						+ " já possui 4 emprestimos");
 				return;
 			}
 			

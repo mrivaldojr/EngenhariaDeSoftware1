@@ -7,17 +7,25 @@ import emprestimo.Emprestimo;
 
 public class EmprestimoProfessor implements Emprestavel {
 
-	private static final int DIAS_PROF = 1;
+	private static final int DIAS_PROF = 4;
 
 	@Override
 	public void pegarEmprestado(Usuario usr, Material material) {
 		if (material.getExemplares() == null) {
 			System.out.println("Este material não possui emxemplares");
-			return;
-		} else {
+			return;	
+		} 
+		
+		else {
 			if (usr.verificaEmprestimoIgual(material.getCodigo())) {
 				System.out.println("Você já tem um empréstimo desse material");
 				return;
+			}
+			
+			
+			if(material.verificaReservaUsr(usr.getCodIdentificacao())!=-1){
+				material.excuirReserva(usr.getCodIdentificacao());
+				usr.removeReserva(material.verificaReservaUsr(usr.getCodIdentificacao()));
 			}
 
 			Exemplar exemplar = material.verificaMaterialDisp();
