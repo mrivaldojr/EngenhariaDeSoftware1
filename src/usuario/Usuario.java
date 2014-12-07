@@ -3,8 +3,8 @@ package usuario;
 import java.util.ArrayList;
 import java.util.Date;
 
-import reserva.Reserva;
 import material.Material;
+import reserva.Reserva;
 import emprestimo.Emprestimo;
 import emprestimoStrategy.Emprestavel;
 
@@ -45,13 +45,20 @@ public class Usuario{
 			return;
 		}
 		
-		Reserva reserva = new Reserva(this, material);
+		Date dataAtual = new Date(System.currentTimeMillis());
+		
+		
+		Reserva reserva = new Reserva(this, material, dataAtual);
 		reserva.reservaMaterial();
 		reservas.add(reserva);
 	}
 	
-	public void removeReserva(int i){
-		
+	public void removeReserva(String codMat){
+		for (int i = 0; i < reservas.size(); i++) {
+			if(reservas.get(i).getMaterial().getCodigo().equals(codMat)){
+				reservas.remove(i);
+			}
+		}
 	}
 	
 	
@@ -117,6 +124,10 @@ public class Usuario{
 			System.out.println("Título: "+emprestimos.get(i).getTituloMaterial()+" Tipo: " 
 											+emprestimos.get(i).tipoMaterial()+" Status:"
 					+emprestimos.get(i).getStatus() +" Data: "+emprestimos.get(i).getDataDev() );
+		}
+		System.out.println("Reservas");
+		for(int i=0; i<reservas.size(); i++){
+			System.out.println("Título:"+reservas.get(i).getMatTitulo()+" Reservado em: "+reservas.get(i).getDate());
 		}
 	}
 	

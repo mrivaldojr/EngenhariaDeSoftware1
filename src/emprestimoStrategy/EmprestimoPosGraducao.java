@@ -41,7 +41,7 @@ public class EmprestimoPosGraducao implements Emprestavel{
 			//tem que remover a reserva
 			if(material.verificaReservaUsr(usr.getCodIdentificacao())!=-1){
 				material.excuirReserva(usr.getCodIdentificacao());
-				usr.removeReserva(material.verificaReservaUsr(usr.getCodIdentificacao()));
+				usr.removeReserva(material.getCodigo());
 			}
 			
 			Exemplar exemplar = material.verificaMaterialDisp();

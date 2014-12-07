@@ -1,18 +1,26 @@
 package reserva;
 
-import usuario.Usuario;
+import java.util.Date;
+
 import material.Material;
+import usuario.Usuario;
 
 public class Reserva {
 
 	private Material material;
 	private Usuario usuario;
+	private Date data;
 	
-	public Reserva(Usuario usuario, Material material) {
+	public Reserva(Usuario usuario, Material material, Date data) {
 		this.material = material;
 		this.usuario = usuario;
+		this.data = data;
 	}
 
+	public Date getDate(){
+		return this.data;
+	}
+	
 	public Material getMaterial() {
 		return material;
 	}
@@ -40,6 +48,9 @@ public class Reserva {
 	public void printaDadosReserva(){
 		System.out.println("Reservado para: "+this.usuario.getNome());
 	}
+	public String getMatTitulo(){
+		return this.material.getTitulo();
+	}
 	
-	
+
 }
