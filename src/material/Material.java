@@ -120,5 +120,15 @@ public class Material {
 		}
 	}
 	
+	public void setMatExemplares(){
+		if(this.exemplares != null){
+			for(int i=0; i<exemplares.length;i++){
+				exemplares[i].setMaterial(this);
+			}
+		}
+	}
+	
+
+	
 	
 }

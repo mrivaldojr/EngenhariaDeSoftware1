@@ -32,7 +32,7 @@ public class Usuario{
 	public void setNome(String nome) {
 		this.nome = nome;
 	}	
-	
+	//--------------------------------------------
 	public void reservarMaterial(Usuario usr, Material material){
 		if(this.contReservas()>=3){
 			System.out.println("Você não pode mais fazer reservas");
@@ -95,7 +95,12 @@ public class Usuario{
 	}
 	
 	public void consultaUsuario(){
+		System.out.println("------------------------Consulta de usuário---------------------");
+		System.out.println("Emprestimos");
 		for(int i=0; i<emprestimos.size(); i++){
+			System.out.println("Título: "+emprestimos.get(i).getTituloMaterial()+" Tipo: " 
+											+emprestimos.get(i).tipoMaterial()+" Status:"
+					+emprestimos.get(i).getStatus() +" Data: "+emprestimos.get(i).getDataDev() );
 		}
 	}
 	

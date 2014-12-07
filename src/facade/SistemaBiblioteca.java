@@ -128,28 +128,31 @@ public class SistemaBiblioteca {
 	}
 
 	private void inicializaMateriais() {
-
+		
 		String[] autores = { "Addison Wesley" };
 		Exemplar exemplar1 = new Exemplar("100", "01", "Disponível");
 		Exemplar exemplar2 = new Exemplar("100", "02", "Disponível");
-
 		Exemplar[] ex = { exemplar1, exemplar2 };
 
 		Material mat = new Livro("100", "Engenharia de Software", 2000,
 				autores, 6, "Addison Wesley", ex);
+		mat.setMatExemplares();
 		materiais.add(mat);
 
 		exemplar1 = new Exemplar("101", "03", "Disponível");
+
 		Exemplar[] ex2 = { exemplar1 };
 		String[] autores2 = { "Grady Booch", "James Rumbaugh", "Ivar Jacobson" };
 		mat = new Livro("101", "UML – Guia do Usuário", 2000, autores2, 7,
 				"Campus", ex2);
+		mat.setMatExemplares();
 		materiais.add(mat);
 
 		exemplar1 = new Exemplar("200", "04", "Disponível");
 		Exemplar[] ex3 = { exemplar1 };
 		mat = new Revista("200", "IEEE Transactions on Software Engineering",
 				53, "Setembro", 2006, ex3);
+		mat.setMatExemplares();
 		materiais.add(mat);
 
 		exemplar1 = new Exemplar("201", "05", "Disponível");
@@ -178,42 +181,13 @@ public class SistemaBiblioteca {
 		mat = new DVD("400",
 				"Indiana Jones and the Kingdom of the Crystal Skull", autores5,
 				2008, 4, ex6);
+		mat.setMatExemplares();
 		materiais.add(mat);
 
 		String[] autores6 = { "William Hurt", "Tim Blake Nelson" };
 		mat = new DVD("401", "Incredible Hulk", autores6, 2008, 4, null);
+		mat.setMatExemplares();
 		materiais.add(mat);
 	}
-
-	/*
-	 * private void inicializaExemplares(){
-	 * 
-	 * Exemplar exemplar = new Exemplar("100", "01", "Disponível");
-	 * exemplares.add(exemplar);
-	 * 
-	 * exemplar = new Exemplar("100", "02", "Disponível");
-	 * exemplares.add(exemplar);
-	 * 
-	 * exemplar = new Exemplar("101", "03", "Disponível");
-	 * exemplares.add(exemplar);
-	 * 
-	 * exemplar = new Exemplar("200", "04", "Disponível");
-	 * exemplares.add(exemplar);
-	 * 
-	 * exemplar = new Exemplar("201", "05", "Disponível");
-	 * exemplares.add(exemplar);
-	 * 
-	 * exemplar = new Exemplar("300", "06", "Disponível");
-	 * exemplares.add(exemplar);
-	 * 
-	 * exemplar = new Exemplar("300", "07", "Disponível");
-	 * exemplares.add(exemplar);
-	 * 
-	 * exemplar = new Exemplar("400", "08", "Disponível");
-	 * exemplares.add(exemplar);
-	 * 
-	 * exemplar = new Exemplar("400", "09", "Disponível");
-	 * exemplares.add(exemplar); }
-	 */
 
 }

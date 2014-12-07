@@ -13,7 +13,6 @@ public class CD extends Material{
 		this.faixas = faixas;
 		this.titulo = titulo;
 		this.exemplares = exemplares;
-		
 	}
 	
 	public String[] getAutores() {
@@ -27,5 +26,11 @@ public class CD extends Material{
 	}
 	public void setFaixas(String[] faixas) {
 		this.faixas = faixas;
+	}
+	
+	public void putMaterialExemplar(){
+		for(int i=0; i <exemplares.length;i++){
+			exemplares[i].setMaterial(this);
+		}
 	}
 }

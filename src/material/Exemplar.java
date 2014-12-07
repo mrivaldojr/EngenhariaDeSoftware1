@@ -4,6 +4,7 @@ import emprestimo.Emprestimo;
 
 public class Exemplar {
 
+	private Material material;
 	private String codMaterial;
 	private String codExemplar;
 	private String status;
@@ -36,8 +37,19 @@ public class Exemplar {
 	public void setEmprestimo(Emprestimo e){
 		this.emprestimo = e;
 	}
+	public void setMaterial(Material m){
+		this.material = m;
+	}
 	
 	public String getUserName(){
 		return this.emprestimo.getUsrName();
+	}
+	
+	public String getNomeMaterial(){
+		return material.getTitulo();
+	}
+	
+	public String getTipoMaterial(){
+		return this.material.getClass().getSimpleName();
 	}
 }

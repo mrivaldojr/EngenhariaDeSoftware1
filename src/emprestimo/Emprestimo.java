@@ -47,7 +47,9 @@ public class Emprestimo {
 	public void setDias(int dias) {
 		this.dias = dias;
 	}
-	
+	public Date getDataDev() {
+		return dataDev;
+	}
 	
 	
 	
@@ -67,8 +69,16 @@ public class Emprestimo {
 	public String getMaterialCod(){
 		return this.exemplar.getCodMaterial();
 	}
-	
+
 	public void devolveExemplar(Exemplar e){
 		e.setStatus("Disponível");
+	}
+	
+	public String getTituloMaterial(){
+		return this.getExemplar().getNomeMaterial();
+	}
+	
+	public String tipoMaterial(){
+		return exemplar.getTipoMaterial();
 	}
 }
