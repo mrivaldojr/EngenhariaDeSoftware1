@@ -11,7 +11,6 @@ public class Material {
 	protected String codigo;
 	protected String titulo;
 	protected int anoPublicacao;
-	
 	protected ArrayList<Reserva> reservas = new ArrayList<Reserva>();
 	protected Exemplar[] exemplares;
 	
@@ -39,7 +38,6 @@ public class Material {
 	
 	public void addReserva(Reserva r){
 		this.reservas.add(r);
-		
 		/*//teste
 		for(int i = 0;i<this.reservas.size();i++){
 			System.out.println(reservas.get(i).getMaterial().getTitulo()+" "+
@@ -64,6 +62,18 @@ public class Material {
 			}
 		}
 		return cont;
+	}
+	
+	public void excuirReserva(String codUsr){
+		
+		for (int i=0; i< reservas.size();i++){
+			if(reservas.get(i).getUserCod().equals(codUsr)){
+				reservas.remove(i);
+				return;
+			}
+		}
+		
+		
 	}
 	
 	public Exemplar verificaMaterialDisp(){

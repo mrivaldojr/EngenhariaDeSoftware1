@@ -44,12 +44,12 @@ public class Usuario{
 			return;
 		}
 		
-		Reserva reserva = new Reserva(usr, material);
+		Reserva reserva = new Reserva(this, material);
 		reserva.reservaMaterial();
 		reservas.add(reserva);
 	}
 	
-	public void removeReserva(){
+	public void removeReserva(int i){
 		
 	}
 	

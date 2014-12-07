@@ -9,7 +9,6 @@ public class EmprestimoGraducao implements Emprestavel {
 
 	private static final int DIAS_GRAD = 1;
 
-	private Material material;
 
 	@Override
 	public void pegarEmprestado(Usuario usr, Material material) {
@@ -43,6 +42,13 @@ public class EmprestimoGraducao implements Emprestavel {
 					(material.verificaReservaUsr(usr.getCodIdentificacao())==-1)){
 					System.out.println("Há mais reservas do que exemplares disponíveis");
 					return;
+			}
+			
+			//se tiver mais reservas que exemplares e uma delas for do usuario 
+			//tem que remover a reserva
+			if(material.verificaReservaUsr(usr.getCodIdentificacao())!=-1){
+				material.excuirReserva(usr.getCodIdentificacao());
+				usr.removeReserva(material.verificaReservaUsr(usr.getCodIdentificacao()));
 			}
 			
 			Exemplar exemplar = material.verificaMaterialDisp();
