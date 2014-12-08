@@ -1,25 +1,25 @@
 Usuário: Joao da Silva
-Emprestimos 
+Emprestimos
 Reservas
 Usuário: Luiz Fernando Rodrigues
-Emprestimos 
+Emprestimos
 Reservas
 Usuário: Pedro Paulo
-Emprestimos 
+Emprestimos
 Reservas
 Usuário: Carlos Lucena
-Emprestimos 
+Emprestimos
 Reservas
-Reserva do material Engenharia de Software para João da Silva
-Reserva do material Engenharia de Software para Luiz Fernando Rodrigues
-Engenharia de Software
+Reserva realizada com sucesso. Material: Engenharia de Software . Usuario: Joao da Silva
+Reserva realizada com sucesso. Material: Engenharia de Software . Usuario: Luiz Fernando Rodrigues
+Material: Engenharia de Software
 2 reservas:
 Reservado para: Joao da Silva
 Reservado para: Luiz Fernando Rodrigues
-Exemplares
-Cod: 01
-Cod: 02
-Este material já está reservado.
+Exemplares:
+Código: 01
+Código: 02
+Há mais reservas do que exemplares disponíveis
 Emprestimo realizado para Carlos Lucena do título Engenharia de Software
 Material: Engenharia de Software
 2 reservas:
@@ -32,22 +32,21 @@ Código: 02
 Emprestimo realizado para Joao da Silva do título Engenharia de Software
 Usuário: Joao da Silva
 Emprestimos
+Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Tue Dec 09 14:24:38 BRT 2014
 Reservas
-Título:Engenharia de Software Reservado em: Sun Dec 07 20:55:37 BRT 2014
 Usuário: Carlos Lucena
 Emprestimos
-Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Thu Dec 11 22:25:59 BRT 2014
+Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Fri Dec 12 14:24:38 BRT 2014
 Reservas
-Emprestimo realizado para Luiz Fernando Rodrigues do título Engenharia de Software
+Não há exemplares disponíveis.
 Material: Engenharia de Software
-1 reservas:
-Reservado para: Joao da Silva
+Reservas = 0
 Exemplares:
 Código: 01
 Emprestado para: Carlos Lucena
 Código: 02
-Emprestado para: Luiz Fernando Rodrigues
-Não há exemplares disponíveis.
+Emprestado para: Joao da Silva
+Você já tem um empréstimo desse material
 Não existe emprestimo do usuario:Luiz Fernando Rodrigues para o material: Indiana Jones and the Kingdom of the Crystal Skull
 Reserva realizada com sucesso. Material: Indiana Jones and the Kingdom of the Crystal Skull . Usuario: Luiz Fernando Rodrigues
 Emprestimo realizado para Joao da Silva do título Indiana Jones and the Kingdom of the Crystal Skull
@@ -60,23 +59,22 @@ Emprestado para: Joao da Silva
 Código: 09
 Usuário: Joao da Silva
 Emprestimos
-Título: Indiana Jones and the Kingdom of the Crystal Skull. Tipo: DVD. Status:Ativo. Data: Mon Dec 08 22:43:31 BRT 2014
+Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Tue Dec 09 14:24:38 BRT 2014
+Título: Indiana Jones and the Kingdom of the Crystal Skull. Tipo: DVD. Status:Ativo. Data: Tue Dec 09 14:24:38 BRT 2014
 Reservas
 Usuário: Luiz Fernando Rodrigues
 Emprestimos
-Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Wed Dec 10 22:34:40 BRT 2014
 Reservas
-Título:Indiana Jones and the Kingdom of the Crystal Skull. Reservado em: Sun Dec 07 22:42:10 BRT 2014
+Título:Indiana Jones and the Kingdom of the Crystal Skull. Reservado em: Mon Dec 08 14:24:38 BRT 2014
 Usuário: Pedro Paulo
 Emprestimos
 Reservas
 Usuário: Carlos Lucena
 Emprestimos
-Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Thu Dec 11 22:25:59 BRT 2014
+Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Fri Dec 12 14:24:38 BRT 2014
 Reservas
 Exemplar: Engenharia de Software devolvido com sucesso.
 Usuário: Carlos Lucena
 Emprestimos
-Título: Engenharia de Software. Tipo: Livro. Status:Finalizado. Data: Thu Dec 11 22:25:59 BRT 2014
+Título: Engenharia de Software. Tipo: Livro. Status:Finalizado. Data: Fri Dec 12 14:24:38 BRT 2014
 Reservas
-

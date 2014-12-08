@@ -11,9 +11,10 @@ public class ConsultaMaterialCommand implements Command{
 	}
 	
 	@Override
-	public void execute(String params) {
+	public int execute(String params) {
 		//só precisa de um parâmtro, não precisa tratamento
-		sistema.consultarMaterial(params);	
+		sistema.consultarMaterial(params);
+		return 0;	
 	}
 
 }

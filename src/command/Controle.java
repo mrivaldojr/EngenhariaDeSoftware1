@@ -3,6 +3,7 @@ package command;
 import java.util.HashMap;
 
 public class Controle {
+	int flag;
 	
 	private HashMap<String, Command> comandos = new HashMap<String, Command>();
 	
@@ -14,13 +15,14 @@ public class Controle {
 		comandos.put(tipo, comando);
 	}
 	
-	public void executaComando(String comando, String params){
+	public int executaComando(String comando, String params){
 		Command c = comandos.get(comando);		
 		try{
-			c.execute(params);
+			return c.execute(params);
 		}
 		catch(Exception e){
-			System.out.println("comando invalido");
+			//System.out.println("comando invalido");
+			return 0;
 		}
 	}
 	
