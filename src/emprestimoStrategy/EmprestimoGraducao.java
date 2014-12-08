@@ -43,7 +43,7 @@ public class EmprestimoGraducao implements Emprestavel {
 			}
 
 			//se tiver mais reservas do que exemplares e nenhuma reserva for do usuário
-			if(material.contReservas()>material.contExemplaresDisp() &&
+			if(material.contReservas()>=material.contExemplaresDisp() &&
 					(material.verificaReservaUsr(usr.getCodIdentificacao())==-1)){
 					System.out.println("Há mais reservas do que exemplares disponíveis");
 					return;
@@ -51,6 +51,8 @@ public class EmprestimoGraducao implements Emprestavel {
 			
 			//se tiver mais reservas que exemplares e uma delas for do usuario 
 			//tem que remover a reserva
+			int teste = material.verificaReservaUsr(usr.getCodIdentificacao());
+			
 			if(material.verificaReservaUsr(usr.getCodIdentificacao())!=-1){
 				material.excuirReserva(usr.getCodIdentificacao());
 				usr.removeReserva(material.getCodigo());
@@ -65,7 +67,7 @@ public class EmprestimoGraducao implements Emprestavel {
 				exemplar.setEmprestimo(emprestimo);
 				usr.addEmprestimos(emprestimo);
 				System.out
-						.println("Emprestimo realizado para " + usr.getNome());
+						.println("Emprestimo realizado para " + usr.getNome()+" do título "+material.getTitulo());
 				return;
 			}
 			else{

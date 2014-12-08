@@ -51,6 +51,8 @@ public class Usuario{
 		Reserva reserva = new Reserva(this, material, dataAtual);
 		reserva.reservaMaterial();
 		reservas.add(reserva);
+		System.out.println("Reserva realizada com sucesso. Material: "
+							+material.getTitulo()+" . Usuario: "+usr.getNome());
 	}
 	
 	public void removeReserva(String codMat){
@@ -118,16 +120,16 @@ public class Usuario{
 	}
 	
 	public void consultaUsuario(){
-		System.out.println("------------------------Consulta de usuário---------------------");
+		System.out.println("Usuário: "+this.nome);
 		System.out.println("Emprestimos");
 		for(int i=0; i<emprestimos.size(); i++){
-			System.out.println("Título: "+emprestimos.get(i).getTituloMaterial()+" Tipo: " 
-											+emprestimos.get(i).tipoMaterial()+" Status:"
-					+emprestimos.get(i).getStatus() +" Data: "+emprestimos.get(i).getDataDev() );
+			System.out.println("Título: "+emprestimos.get(i).getTituloMaterial()+". Tipo: " 
+											+emprestimos.get(i).tipoMaterial()+". Status:"
+					+emprestimos.get(i).getStatus() +". Data: "+emprestimos.get(i).getDataDev() );
 		}
 		System.out.println("Reservas");
 		for(int i=0; i<reservas.size(); i++){
-			System.out.println("Título:"+reservas.get(i).getMatTitulo()+" Reservado em: "+reservas.get(i).getDate());
+			System.out.println("Título:"+reservas.get(i).getMatTitulo()+". Reservado em: "+reservas.get(i).getDate());
 		}
 	}
 	
@@ -136,11 +138,12 @@ public class Usuario{
 			if(emprestimos.get(i).getMaterialCod().equals(mat.getCodigo())){
 				emprestimos.get(i).setStatus("Finalizado");
 				emprestimos.get(i).devolveExemplar(emprestimos.get(i).getExemplar());
+				System.out.println("Exemplar: "+emprestimos.get(i).getTituloMaterial()+" devolvido com sucesso.");
 				return;
 			}
-			System.out.println("Não existe emprestimo do usuario:"
-			+getNome()+" para o material: "+mat.getTitulo());
 		}
+		System.out.println("Não existe emprestimo do usuario:"
+				+getNome()+" para o material: "+mat.getTitulo());
 	}
 	
 }

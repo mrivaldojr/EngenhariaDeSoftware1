@@ -36,13 +36,12 @@ public class EmprestimoProfessor implements Emprestavel {
 				exemplar.setEmprestimo(emprestimo);
 				usr.addEmprestimos(emprestimo);
 				System.out
-						.println("Emprestimo realizado para " + usr.getNome());
+						.println("Emprestimo realizado para " + usr.getNome()+" do título "+material.getTitulo());
 				return;
 			} else {
 				System.out.println("Não há exemplares disponíveis.");
 			}
 		}
-		System.out.println("Emprestimo do professor");
 	}
 
 }

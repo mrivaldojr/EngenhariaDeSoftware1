@@ -38,11 +38,6 @@ public class Material {
 	
 	public void addReserva(Reserva r){
 		this.reservas.add(r);
-		/*//teste
-		for(int i = 0;i<this.reservas.size();i++){
-			System.out.println(reservas.get(i).getMaterial().getTitulo()+" "+
-								reservas.get(i).getUsuario().getNome());
-		}*/
 	}
 
 	public int contReservas(){
@@ -97,21 +92,25 @@ public class Material {
 	}
 	
 	public void consulta(){
-		System.out.println(this.titulo);
+		System.out.println("Material: "+this.titulo);
 		int cont = contReservas();
 		if(cont==0){
 			System.out.println("Reservas = 0");
 		}
 		else{
+			System.out.println(cont+" reservas:");
 			for(int i = 0;i<reservas.size();i++){
-				System.out.println(cont+" reservas_________________");
 				reservas.get(i).printaDadosReserva();
 			}
 		}
 		
-		System.out.println("Exemplares-----------");
+		System.out.println("Exemplares:");
+		if(exemplares==null){
+			System.out.println("Não há exemplares deste material.");
+			return;
+		}
 		for(int i=0; i<exemplares.length;i++){
-			System.out.println("Cod: "+exemplares[i].getCodEx());
+			System.out.println("Código: "+exemplares[i].getCodEx());
 			
 			if(exemplares[i].getStatus().equals("Indisponível")){
 				System.out.println("Emprestado para: "+exemplares[i].getUserName());

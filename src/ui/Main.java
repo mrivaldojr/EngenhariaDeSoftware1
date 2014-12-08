@@ -1,6 +1,5 @@
 package ui;
 
-import java.util.Date;
 import java.util.Scanner;
 
 import command.ConsultaMaterialCommand;
@@ -8,17 +7,11 @@ import command.ConsultaUsuarioCommand;
 import command.Controle;
 import command.DevolucaoCommand;
 import command.EmprestimoCommand;
-import command.NullCommand;
 import command.ReservaCommand;
-import facade.SistemaBiblioteca;
 
 public class Main {
 
-	public static void main(String[] args) {
-		//só para teste
-		
-
-		
+	public static void main(String[] args) {	
 		String opcao ="";
 		String parametros;
 		

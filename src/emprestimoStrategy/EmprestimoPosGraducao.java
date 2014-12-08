@@ -53,7 +53,7 @@ public class EmprestimoPosGraducao implements Emprestavel{
 				exemplar.setEmprestimo(emprestimo);
 				usr.addEmprestimos(emprestimo);
 				System.out
-						.println("Emprestimo realizado para " + usr.getNome());
+						.println("Emprestimo realizado para " + usr.getNome()+" do título "+material.getTitulo());
 				return;
 			}
 			else{

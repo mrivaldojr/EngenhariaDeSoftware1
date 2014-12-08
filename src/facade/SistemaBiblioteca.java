@@ -46,12 +46,24 @@ public class SistemaBiblioteca {
 
 		material = buscaMat(codMaterial);
 		
+		if(material==null){
+			System.out.println("Material nao encontrado");
+			return;
+		}
+		
 		material.consulta();
 
 	}
 
 	public void consultarUser(String codUsr) {
+	
 		usuario = buscaUsr(codUsr);
+		
+		if(usuario==null){
+			System.out.println("Usuario nao encontrado");
+			return;
+		}
+		
 		usuario.consultaUsuario();
 	}
 

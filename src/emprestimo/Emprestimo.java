@@ -51,15 +51,11 @@ public class Emprestimo {
 		return dataDev;
 	}
 	
-	
-	
+	//----------------
 	public void setDataDev(int dias){
 		Calendar c = Calendar.getInstance();
 		c.add(Calendar.DAY_OF_MONTH, dias);
 		dataDev = c.getTime();
-		
-		//dataDev.add(Calendar.DAY_OF_MONTH, dias);
-		System.out.println(dataDev);
 	}
 	
 	public String getUsrName(){
