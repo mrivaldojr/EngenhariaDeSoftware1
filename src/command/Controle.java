@@ -15,8 +15,13 @@ public class Controle {
 	}
 	
 	public void executaComando(String comando, String params){
-		Command c = comandos.get(comando);
-		c.execute(params);
+		Command c = comandos.get(comando);		
+		try{
+			c.execute(params);
+		}
+		catch(Exception e){
+			System.out.println("comando invalido");
+		}
 	}
 	
 }

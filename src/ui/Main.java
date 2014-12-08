@@ -39,7 +39,8 @@ public class Main {
 			opcao = scanner.next();
 			parametros = scanner.nextLine();
 			parametros = parametros.trim();
-			controle.executaComando(opcao, parametros);	
+			if(!(opcao.equals("fim")))
+					controle.executaComando(opcao, parametros);	
 		}
 				
 	}

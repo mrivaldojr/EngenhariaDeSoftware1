@@ -1,0 +1,26 @@
+usu 123
+usu 456
+usu 789
+usu 100
+res 123 100
+res 456 100
+mat 100
+emp 789 100
+emp 100 100
+mat 100
+emp 123 100
+usu 123
+usu 100
+emp 456 100
+mat 100
+emp 123 100
+dev 456 400
+res 456 400
+emp 123 400
+mat 400
+usu 123
+usu 456
+usu 789
+usu 100
+dev 100 100
+usu 100
