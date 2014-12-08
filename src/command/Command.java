@@ -8,6 +8,6 @@ em qualquer objeto concreto de comando
 public interface Command {
 	//como cada classe comando pode receber um numero diferente de parametros
 	// pega a String e toda da entrada e trata ela em cada implementação do execute() 
-	public void execute(String params);
+	public int execute(String params);
 	
 }

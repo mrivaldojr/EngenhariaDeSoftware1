@@ -14,7 +14,7 @@ public class DevolucaoCommand implements Command {
 	}
 	
 	@Override
-	public void execute(String params) {
+	public int execute(String params) {
 		//pega o parâmetro obtido na entrada e divide entre os espacos
 		//e passa para o método da fachada
 		splited = params.split(" ");
@@ -22,6 +22,7 @@ public class DevolucaoCommand implements Command {
 		idMat = splited[1];
 		
 		sistema.devolverMaterial(idUsr, idMat);
+		return 0;
 	}
 
 }

@@ -7,6 +7,7 @@ import command.ConsultaUsuarioCommand;
 import command.Controle;
 import command.DevolucaoCommand;
 import command.EmprestimoCommand;
+import command.FimCommand;
 import command.ReservaCommand;
 
 public class Main {
@@ -14,6 +15,7 @@ public class Main {
 	public static void main(String[] args) {	
 		String opcao ="";
 		String parametros;
+		int flag=0;
 		
 		Controle controle = new Controle();
 		
@@ -23,6 +25,7 @@ public class Main {
 		DevolucaoCommand devolucaoCommand = new DevolucaoCommand();
 		EmprestimoCommand emprestimoCommand = new EmprestimoCommand();
 		ReservaCommand reservaCommand = new ReservaCommand();
+		FimCommand fimCommand = new FimCommand();
 		
 		//inicializa os hashmaps para ligar cada string a um comando
 		controle.setComandos("dev", devolucaoCommand);
@@ -30,16 +33,14 @@ public class Main {
 		controle.setComandos("emp", emprestimoCommand);
 		controle.setComandos("usu", consultaUsuarioCommand);
 		controle.setComandos("res", reservaCommand);
-		
+		controle.setComandos("fim", fimCommand);
 		
 		Scanner scanner = new Scanner(System.in);
-		//opcao = scanner.next();
-		
-		while(!(opcao.equals("fim"))){
+		while(flag==0){
 			opcao = scanner.next();
 			parametros = scanner.nextLine();
 			parametros = parametros.trim();
-			controle.executaComando(opcao, parametros);	
+			flag = controle.executaComando(opcao, parametros);	
 		}
 				
 	}

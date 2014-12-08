@@ -1,0 +1,80 @@
+Usuário: Joao da Silva
+Emprestimos
+Reservas
+Usuário: Luiz Fernando Rodrigues
+Emprestimos
+Reservas
+Usuário: Pedro Paulo
+Emprestimos
+Reservas
+Usuário: Carlos Lucena
+Emprestimos
+Reservas
+Reserva realizada com sucesso. Material: Engenharia de Software . Usuario: Joao da Silva
+Reserva realizada com sucesso. Material: Engenharia de Software . Usuario: Luiz Fernando Rodrigues
+Material: Engenharia de Software
+2 reservas:
+Reservado para: Joao da Silva
+Reservado para: Luiz Fernando Rodrigues
+Exemplares:
+Código: 01
+Código: 02
+Há mais reservas do que exemplares disponíveis
+Emprestimo realizado para Carlos Lucena do título Engenharia de Software
+Material: Engenharia de Software
+2 reservas:
+Reservado para: Joao da Silva
+Reservado para: Luiz Fernando Rodrigues
+Exemplares:
+Código: 01
+Emprestado para: Carlos Lucena
+Código: 02
+Emprestimo realizado para Joao da Silva do título Engenharia de Software
+Usuário: Joao da Silva
+Emprestimos
+Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Tue Dec 09 14:24:38 BRT 2014
+Reservas
+Usuário: Carlos Lucena
+Emprestimos
+Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Fri Dec 12 14:24:38 BRT 2014
+Reservas
+Não há exemplares disponíveis.
+Material: Engenharia de Software
+Reservas = 0
+Exemplares:
+Código: 01
+Emprestado para: Carlos Lucena
+Código: 02
+Emprestado para: Joao da Silva
+Você já tem um empréstimo desse material
+Não existe emprestimo do usuario:Luiz Fernando Rodrigues para o material: Indiana Jones and the Kingdom of the Crystal Skull
+Reserva realizada com sucesso. Material: Indiana Jones and the Kingdom of the Crystal Skull . Usuario: Luiz Fernando Rodrigues
+Emprestimo realizado para Joao da Silva do título Indiana Jones and the Kingdom of the Crystal Skull
+Material: Indiana Jones and the Kingdom of the Crystal Skull
+1 reservas:
+Reservado para: Luiz Fernando Rodrigues
+Exemplares:
+Código: 08
+Emprestado para: Joao da Silva
+Código: 09
+Usuário: Joao da Silva
+Emprestimos
+Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Tue Dec 09 14:24:38 BRT 2014
+Título: Indiana Jones and the Kingdom of the Crystal Skull. Tipo: DVD. Status:Ativo. Data: Tue Dec 09 14:24:38 BRT 2014
+Reservas
+Usuário: Luiz Fernando Rodrigues
+Emprestimos
+Reservas
+Título:Indiana Jones and the Kingdom of the Crystal Skull. Reservado em: Mon Dec 08 14:24:38 BRT 2014
+Usuário: Pedro Paulo
+Emprestimos
+Reservas
+Usuário: Carlos Lucena
+Emprestimos
+Título: Engenharia de Software. Tipo: Livro. Status:Ativo. Data: Fri Dec 12 14:24:38 BRT 2014
+Reservas
+Exemplar: Engenharia de Software devolvido com sucesso.
+Usuário: Carlos Lucena
+Emprestimos
+Título: Engenharia de Software. Tipo: Livro. Status:Finalizado. Data: Fri Dec 12 14:24:38 BRT 2014
+Reservas
