@@ -10,8 +10,6 @@ Repositório destinado para Armazenamento do Trabalho de Enhenharia de Software 
 ### 2. Padrões Usados
 ### 3. Time
 
-
-
 ##### 1. Introdução
 
 Neste trabalho o aluno irá projetar e implementar um sistema bem simples e de porte muito pequeno. O objetivo deste trabalho é permitir que os alunos usem seus conhecimentos em projeto orientado a objetos e Padrões de Projetos de Software GoF.
