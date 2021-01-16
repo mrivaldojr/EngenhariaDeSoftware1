@@ -23,6 +23,7 @@ Todos esses conhecimentos já foram estudados pelos alunos nessa disciplina ou e
 1. Padrões de Criação
    * *Singleton*
 2. Padrões Estruturais
+
    * *Facade*
 3. Padrões Comportamentais
    * *Command*
